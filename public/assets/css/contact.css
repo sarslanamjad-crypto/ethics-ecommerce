@@ -1,0 +1,70 @@
+/* Stylesheet for: contact.blade.php */
+
+/* --- Fonts & Root Variables --- */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Outfit:wght@100..900&amp;display=swap");
+
+:root {
+    --white-color: #FFFFFF;
+    --title-color: #1E1E1E;
+    --paragraph-color: #595959;
+    --primary-color: #E3E231;
+}
+
+
+.breadcrumb-section {
+    background-size: cover;
+    padding: 220px 0px 167px;
+}
+
+.breadcrumb-section .banner-content h1 {
+    color: var(--white-color);
+}
+
+
+/* --- Offline Store Location --- */
+.ofline-store-location-section .single-location {
+    border: 1px solid rgba(238, 238, 238, 0.9333333333);
+    padding: 35px 20px 28px;
+}
+
+.ofline-store-location-section .single-location .title-and-view-btn h6 {
+    color: var(--title-color);
+    font-family: var(--font-outfit);
+}
+
+.ofline-store-location-section .single-location .title-and-view-btn a {
+    color: var(--title-color);
+    text-decoration: underline;
+}
+
+.ofline-store-location-section .single-location ul li .icon {
+    border: 1px solid #EEEEEE;
+}
+
+.ofline-store-location-section .single-location ul li .info {
+    color: var(--paragraph-color);
+}
+
+/* --- Enquiry Form --- */
+.enquery-section .enquery-form-wrapper.style-2 {
+    background: transparent;
+}
+
+.enquery-section .enquery-form-wrapper .form-title h4 {
+    font-family: var(--font-outfit);
+    color: var(--title-color);
+}
+
+
+/* --- Modal Preview (product-view-modal) --- */
+.product-view-modal .modal-content {
+    border: 1px solid var(--border-color);
+}
+
+.shop-details-top-section .shop-details-img .nav-pills .nav-link.active {
+    border: 1px solid var(--primary-color);
+}
+
+.shop-details-top-section .shop-details-content .price-area .price {
+    color: var(--title-color);
+}

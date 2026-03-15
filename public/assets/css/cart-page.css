@@ -1,0 +1,59 @@
+/* Stylesheet for: cart-page.blade.php */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Outfit:wght@100..900&amp;display=swap");
+
+:root {
+    --title-color: #1E1E1E;
+    --paragraph-color: #595959;
+    --white-color2: #EEEEEE;
+}
+
+/* --- Cart Table Structure --- */
+.cart-page .cart-shopping-wrapper .cart-table thead tr th {
+    color: var(--paragraph-color);
+    font-family: var(--font-outfit);
+    font-size: 18px;
+    padding: 20px 15px;
+}
+
+@media (max-width: 767px) {
+    .cart-page .cart-shopping-wrapper .cart-table thead tr th {
+        display: none;
+    }
+}
+
+.cart-page .cart-shopping-wrapper .cart-table tbody tr td {
+    color: var(--title-color);
+    font-family: var(--font-dm-sans);
+    font-size: 18px;
+    padding: 30px 15px;
+}
+
+@media (max-width: 767px) {
+    .cart-page .cart-shopping-wrapper .cart-table tbody tr td {
+        display: block;
+        text-align: right;
+    }
+
+    .cart-page .cart-shopping-wrapper .cart-table tbody tr td::before {
+        content: attr(data-label);
+        left: 15px;
+        color: var(--paragraph-color);
+    }
+}
+
+.cart-page .cart-shopping-wrapper .details-button {
+    color: #497CFF;
+    font-family: var(--font-outfit);
+    font-size: 14px;
+}
+
+.cart-page .cart-shopping-wrapper .cart-table tbody tr td .product-info-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart-page .cart-shopping-wrapper .cart-table tbody tr td .product-info-wrapper .product-info-content h6 {
+    color: var(--title-color);
+    font-family: var(--font-outfit);
+}

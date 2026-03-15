@@ -1,0 +1,224 @@
+/*  Stylesheet for: index.blade.php */
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Outfit:wght@100..900&amp;display=swap");
+
+:root {
+    --white-color: #FFFFFF;
+    --white-color2: #EEEEEE;
+    --title-color: #1E1E1E;
+    --title-color2: #A0A0A0;
+    --paragraph-color: #595959;
+    --primary-color: #E3E231;
+    --border-color: #eee;
+    --black-color: #1E1E1E;
+    --font-dm-sans: "DM Sans", sans-serif;
+    --font-outfit: "Outfit", sans-serif;
+    --bs-border-width: 1px;
+    --bs-border-radius: 0.375rem;
+    --bs-modal-bg: var(--white-color);
+    --bs-modal-border-color: var(--border-color);
+    --bs-modal-border-radius: 0.5rem;
+}
+
+/* --- Global Resets & Typography --- */
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    font-family: var(--font-dm-sans);
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--paragraph-color);
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+ul,
+li {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+    color: var(--title-color);
+}
+
+
+.progress-wrap {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background-color: #121212;
+    z-index: 10000;
+    opacity: 0;
+}
+
+.primary-btn {
+    background: var(--primary-color);
+    color: var(--title-color);
+    padding: 18px 44px;
+}
+
+.header1 {
+    background-color: #000;
+    z-index: 999;
+}
+
+.banner-wrapper {
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.product-card .product-card-img .overlay {
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.categori-content:hover {
+    transform: translateY(-7px);
+}
+
+.sell-banner-section {
+    background-size: cover;
+    min-height: 80vh;
+    background-attachment: fixed;
+}
+
+.collection-section .fashion-area .fashion-area-content h3 {
+    color: var(--white-color);
+}
+
+.fooeter-section {
+    background: var(--title-color);
+}
+
+.footer-btm {
+    background: #2A2A2A;
+}
+
+.swiper {
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    display: flex;
+}
+
+.swiper-slide {
+    transition-property: transform;
+}
+
+.wow {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.fadeInDown {
+    animation-name: fadeInDown;
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+.fadeInLeft {
+    animation-name: fadeInLeft;
+}
+
+.fadeInRight {
+    animation-name: fadeInRight;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.nice-select {
+    border: solid 1px #e8e8e8;
+}
+
+.login-modal .modal-content {
+    border: 1px solid var(--black-color);
+}
+
+/* Checkout responsive flex fallback */
+.checkout-columns {
+    /* default stacking on small screens */
+}
+
+.checkout-fullwidth-inner{ width:100%; }
+
+@media (min-width: 768px) {
+    .checkout-columns {
+        display: flex;
+        gap: 30px;
+        align-items: flex-start;
+    }
+
+    .checkout-columns > .checkout-left {
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+
+    .checkout-columns > .checkout-right {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+
+    /* Make the order summary sticky and keep safe distance from header */
+    .checkout-columns > .checkout-right .checkout-form-wrapper {
+        position: sticky;
+        top: 120px;
+    }
+}
+
+@media (min-width: 992px) {
+    .checkout-columns {
+        gap: 40px;
+    }
+    .checkout-columns > .checkout-left {
+        flex: 0 0 70%;
+        max-width: 70%;
+    }
+    .checkout-columns > .checkout-right {
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+    .checkout-fullwidth-inner{ padding-left: 20px; padding-right: 20px; }
+}
+
+@media (min-width: 1400px) {
+    .checkout-fullwidth-inner{ padding-left: 80px; padding-right: 80px; }
+}
+

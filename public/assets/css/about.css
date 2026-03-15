@@ -1,0 +1,110 @@
+ /* * Stylesheet for: about-us.blade.php */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Outfit:wght@100..900&amp;display=swap");
+
+:root {
+    --white-color: #FFFFFF;
+    --title-color: #1E1E1E;
+    --paragraph-color: #595959;
+    --primary-color: #E3E231;
+    --black-color: #1E1E1E;
+}
+
+/* --- Global Resets & Typography --- */
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: var(--white-color);
+}
+
+
+.breadcrumb-section {
+    background-size: cover;
+    padding: 220px 0px 167px;
+    position: relative;
+}
+
+.breadcrumb-section .banner-content h1 {
+    font-family: var(--font-outfit);
+    font-size: 40px;
+}
+
+.breadcrumb-section .banner-content .breadcrumb-list li a {
+    color: var(--white-color);
+}
+
+.breadcrumb-section .banner-content .breadcrumb-list li span {
+    color: var(--primary-color);
+}
+
+/* Video Section */
+.video-section .video-section-image::before {
+    background-color: rgba(30, 30, 30, 0.36);
+}
+
+.video-section .video-section-image .video-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.video-section .video-section-image .video-area .icon .video-circle {
+    stroke: var(--white-color);
+}
+
+/* --- About & Value Content --- */
+.our-brand-section .our-brand-content h2 {
+    font-family: var(--font-outfit);
+    font-size: 36px;
+    color: var(--title-color);
+}
+
+.our-value-section .value-content h3 {
+    font-family: Outfit;
+    font-size: 30px;
+    color: var(--title-color);
+}
+
+.our-value-section .value-content ul li {
+    font-family: var(--font-dm-sans);
+    color: var(--paragraph-color);
+}
+
+/* --- Partner Logo Marquee --- */
+.partner-logo-section .logo-wrap .logo-title h5 {
+    color: var(--title-color);
+}
+
+.logo-area {
+    overflow: hidden;
+}
+
+/* --- Swiper & Animate.css (Required Rules) --- */
+.swiper {
+    overflow: hidden;
+}
+
+.swiper-slide {
+    transition-property: transform;
+}
+
+.wow {
+    animation-duration: 1s;
+}
+
+.fadeInDown {
+    animation-name: fadeInDown;
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+.fadeInLeft {
+    animation-name: fadeInLeft;
+}
+
+.fadeInRight {
+    animation-name: fadeInRight;
+}
